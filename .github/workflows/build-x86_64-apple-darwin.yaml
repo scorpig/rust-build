@@ -38,9 +38,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-13]
+        os: [macos-11]
         include:
-          - os: macos-13
+          - os: macos-11
             ASSET_PATH: "build/dist/rust-nightly-x86_64-apple-darwin.tar.xz"
             ASSET_NAME: "rust-${{ github.event.inputs.release_version }}-x86_64-apple-darwin.tar.xz"
             ASSET_CONTENT_TYPE: "application/x-tar"
